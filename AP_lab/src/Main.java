@@ -12,8 +12,8 @@ import java.util.PriorityQueue;
  */
 class Company
 {
-	private String name;
-	private String[] course_criteria;
+	final private String name;
+	final private String[] course_criteria;
 	private int reqd_students;
 	private String app_status;	
 	public Company(String name, String[] course_criteria, int reqd_students, String app_status)
@@ -64,9 +64,9 @@ class Company
 */
 class Student
 {
-	private int rollno;
+	final private int rollno;
 	private float cgpa;
-	private String branch;
+	final private String branch;
 	private String placement_status;
 	private String placement_company;
 	public HashMap<String, Integer> map = new HashMap<>();
